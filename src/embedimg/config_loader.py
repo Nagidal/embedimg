@@ -37,10 +37,10 @@ class Config():
         self.error_regex = re.compile(r"""config_parser\.get.*\(["'](?P<section>\w+)["'], *["'](?P<variable>\w+)["']\)""")
         self.path_to_config_file = cfg_path
         self.path_to_home = utils.provide_dir(self.path_to_config_file.parent)
-        self.path_to_starter_home = pathlib.Path.home() / utils.home_dir_name
+        self.path_to_embedimg_home = pathlib.Path.home() / utils.home_dir_name
         self._subdir_dir = Preconfigured_Path(
                 internal_name="subdir_dir",
-                path=self.path_to_starter_home / "subdir",
+                path=self.path_to_embedimg_home / "subdir",
                 comment="some subdir",
             )
         self._wizard_has_run = False

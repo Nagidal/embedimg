@@ -6,7 +6,7 @@ import pathlib
 
 class Error(Exception):
     """
-    Base class for starter-specific errors
+    Base class for embedimg-specific errors
     """
     def __init__(self, message: str=""):
         self.message = message
