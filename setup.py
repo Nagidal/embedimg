@@ -40,7 +40,7 @@ def get_property(property: str, path_to_init_file: pathlib.Path) -> str:
 setup(
         name=project_name,
         version=get_property("version", path_to_init_file.parent / "version.py"),
-        description="Your description here",
+        description="Embeds linked images into html as base64 data",
         long_description=long_description,
         long_description_content_type="text/markdown",
         author=get_property("__author__", path_to_init_file),
@@ -65,7 +65,7 @@ setup(
             "Operating System :: POSIX :: Linux",
             "Operating System :: MacOS :: MacOS X",
             ],
-        keywords="Your keywords here",
+        keywords="html image embedding base64",
         package_dir={"": package_dir},
         packages=find_packages(where=package_dir),
         package_data={
